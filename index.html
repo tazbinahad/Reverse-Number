@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse A Number</title>
+    <style>
+        .container {
+            max-width: 980px;
+            max-height: 100vh;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .user-input {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .user-input h2,
+        .output p {
+            font-size: 20px;
+            color: grey;
+            text-align: center;
+        }
+
+        .output .result {
+            color: red;
+            font-weight: bold;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            word-break: break-word;
+        }
+
+        .user-input form input {
+            border: 1px solid grey;
+            border-style: dashed;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        .user-input form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .user-input form button {
+            background: grey;
+            border: 1px solid grey;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-weight: 700;
+            color: #fff;
+            max-width: 60%;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        .user-input .output {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-input">
+            <h2>
+                Enter your number to reverse
+            </h2>
+            <form action="">
+                <input class="input-number" type="number" placeholder="Number" required>
+                <button class="submit" type="submit">Show Result</button>
+            </form>
+            <div class="output">
+                <p>Number Reversed: <span class="result"> Empty</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <script src="/reverse.js"></script>
+</body>
+
+</html>
